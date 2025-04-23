@@ -1,0 +1,88 @@
+.applications_container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    padding: 5rem;
+    margin-top: 5rem;
+}
+
+.step-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step {
+    background-color: #FBD864;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 5rem;
+    border-radius: 15px;
+    max-width: 350px;
+    height: 350px;
+    max-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step p {
+    font-size: 1.5vw;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.circle {
+    position: absolute;
+    top: -33%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle p {
+    font-size: 4vw;
+    color: var(--color-blue-dark);
+}
+
+@media screen and (min-width: 1700px) {
+    .step {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width:1200px ){
+    .applications_container {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .step-container{
+        margin-top: 3rem;
+    }
+
+    .step {
+        max-width: 350px;
+        max-height: 180px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+}
